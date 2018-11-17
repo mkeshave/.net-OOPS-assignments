@@ -1,0 +1,14 @@
+1.1
+	Base class Courses
+	{}
+	Derived classes: Mathematics, DatabasesAndInfoSystem, IslamicHistory
+	
+	Design classes:
+		Student, Professor, Assessment ,courseRoom, Test, ExamGrade
+	Objects: student, Professor, Course, courseroom 
+1.2
+Discrete Mathematics:
+ I am agree,we have class DiscreteMathematics as derived class which has Mathematics as base class.
+Discrete Mathematics has attribute inherited from Course and Mathematics class as well as its own attributes
+like topics_name,total_topics, topic_duration and opertions like getTopicsInfo(), displayCourseContent() etc.
+

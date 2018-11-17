@@ -1,0 +1,138 @@
+1.1
+Class Courses
+{
+	public string course_name;
+	public int course_start_date;
+	public int course_end_date, total_marks;
+	public long courseduration;
+	public double course_fees;
+
+
+	public void getCourseInfo();
+	public void displayCourseDetails();
+
+}
+
+class Mathematics extends Courses
+{
+	public string type, room_name;
+	public string topics_name;
+	public int total_topics;
+	public long topic_duration;
+	public int total_weightage_marks;
+
+
+	public void topicsInfo();
+
+}
+
+class Professor
+{
+	public string profName,course_allocated,dept, qualification;
+	public int exp;
+	
+	getProInfo();
+	courseAllocatedInfo();
+	displayProfDetails();
+
+}
+
+class Test extends Courses
+{	
+	public int test_result;
+	public void LevelOfStud();
+	
+
+}
+
+class ExamGrades extends Courses
+{
+	public string grade;
+	public int obt_marks;
+
+	public string calGrade();
+	public void disGrade();
+
+}
+
+******************************************************************************
+1.2
+class Date
+{
+	public int date1,date2, day,month,year;
+	public string date_format,day_of_week, month_name;
+	
+	public void extractPartsOfday(date1);
+	public int dateManipulation(date1);
+	public int compareDate(date1,date2);
+	
+}
+*************************************************************************
+
+1.3
+
+class Matrix
+{
+	public int index1,index2,matrix[][], row,column;
+
+	public Matrix()
+	{	
+		DataInputStream dis=new DataInputStream(System.in);
+		for(index1=0; index1<10; index1++)
+			for(index2=0; index2<10;index2++)
+			{
+				System.out.println("Enter value for matrix"+ matrix[index1][index2]);
+				matrix[index1][index2]=dis.readline();					
+			}
+	}
+
+	public Matrix(int row,int column)
+	{	
+		DataInputStream dis=new DataInputStream(System.in);
+		for(index1=0; index1<row; index1++)
+			for(index2=0; index2<column;index2++)
+			{
+				System.out.println("Enter value for matrix"+ matrix[index1][index2]);
+				matrix[index1][index2]=dis.readline();					
+			}
+	}
+
+	public void readMatrix()
+		{
+		DataInputStream dis=new DataInputStream(System.in);
+		for(index1=0; index1<row; index1++)
+			for(index2=0; index2<column;index2++)
+			{
+				System.out.println("Enter value for matrix"+ matrix[index1][index2]);
+				matrix[index1][index2]=dis.readline();					
+			}
+		}
+	public void printMatrix()
+	{
+		DataInputStream dis=new DataInputStream(System.in);
+		for(index1=0; index1<row; index1++)
+		{
+			for(index2=0; index2<column;index2++)
+			{
+				System.out.print("Enter value for matrix"+ matrix[index1][index2]);
+				System.out.print(" ");
+					
+			}
+		System.out.print("\n");
+		}
+	}
+
+	public static void main(String s)
+	{
+			
+		Matrix m=new Matrix(); //call default constructor
+		Matrix m1= new Matrix(4,2); //call parameterized constructor.
+		m.readMatrix();
+		m1.readMatrix();
+		m.printMatrix();
+		m1.printMatrix();
+		
+
+	}
+
+}

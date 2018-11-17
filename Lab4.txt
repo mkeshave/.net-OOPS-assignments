@@ -1,0 +1,70 @@
+Lab 4. Abstract classes , Polymorphism
+Abstract classes:
+	1.Mobile
+	2.MobileOperations
+	3.Sender
+	4.Receiver
+	5.CallingClass
+	6.MultimediaClass
+
+
+public class Mobile
+{
+	public string mobile_name;
+	public long mob_no, IMENO;
+
+	public void getMobileDetails();	
+	
+
+}
+
+class abstract Message extends Mobile
+{
+	public string sender,reciever, msg;
+	public getMobileDetails();
+	public void sendMessage(int sender_no, string msg1,int size);	
+}
+
+class AudioMessage extends Message
+{	
+	public string audio_src;
+	public void sendMessage(int sender_no, straing msg1, int size)
+	{
+	}
+		
+
+	
+}
+
+class AudioMessage extends Message
+{	
+	public string audio_src;
+	public void sendMessage(int sender_no, straing msg1, int size)
+	{
+		//use msg1= audio_src
+	}
+		
+
+	
+}
+class voiceMessage extends Message
+{	
+	public string voice_src;
+	public void sendMessage(int sender_no, straing msg1, int size)
+	{
+		//use msg1= voice_src
+	}
+		
+
+	
+}
+class multiMediaMessage extends Message
+{	
+	public string multimedia_src;
+	public void sendMessage(int sender_no, straing msg1, int size)
+	{
+		//use msg1=multimedia_src
+	}
+		
+	
+}	
